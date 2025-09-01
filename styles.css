@@ -757,6 +757,30 @@
     line-height: 1.5;
     margin-top: 10px;
 }
+/* ---- Mobile view ke liye responsive fix ---- */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 28px;       /* छोटे screen ke liye font chhota */
+        min-height: auto;      /* fix height hata di gayi */
+    }
+
+    .hero-description {
+        font-size: 16px;       /* description bhi chhota */
+    }
+
+    .typed-text {
+        white-space: normal;   /* mobile pe wrapping allow karo */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 22px;       /* aur chhota very small screen pe */
+    }
+    .hero-description {
+        font-size: 14px;
+    }
+}
 
 /*mycode2*/
 
@@ -775,3 +799,4 @@
 
 
 /*my code*/
+
